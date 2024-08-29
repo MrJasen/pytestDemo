@@ -2,7 +2,7 @@ import pytest
 import os
 import allure
 from api.user import user
-from common.mysql_operate import db
+# from common.mysql_operate import db
 from common.read_data import data
 from common.logger import logger
 
@@ -22,6 +22,7 @@ def get_data(yaml_file_name):
 base_data = get_data("base_data.yml")
 api_data = get_data("api_test_data.yml")
 scenario_data = get_data("scenario_test_data.yml")
+rank_data = get_data("api_rank_data.yml")
 
 
 @allure.step("前置步骤 ==>> 清理数据")

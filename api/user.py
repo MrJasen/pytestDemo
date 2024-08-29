@@ -30,5 +30,8 @@ class User(RestClient):
     def delete(self, name, **kwargs):
         return self.post("/delete/user/{}".format(name), **kwargs)
 
+    def rank(self, id, time,**kwargs):
+        return self.post("/rest/wd/entertainment/activity/smg24/card/rank".format(id, time),**kwargs)
+
 
 user = User(api_root_url)

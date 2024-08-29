@@ -1,0 +1,20 @@
+test_rank_meta:
+  id1: "smg24_wzry"
+  id2: "smg24_hpjy"
+  id3: "smg24_ys"
+
+
+test_rank_meta_time:
+  time1: "1720666800000"
+  time2: "1721275200000"
+  time3: "1721880000000"
+
+
+test_get_rank_info:
+  # 活动id,时间戳,期望返回码,期望返回信息
+  # activityId, time, except_code, except_msg
+  - ["smg24_wzry", "1720666800000", 1, "查询成功"]
+  - [ "xiaozhaokun", "1720666800000", 110001, "活动不存在" ]
+  - [ "smg24_hpjy", "0", 32001, "榜单不存在" ]
+
+

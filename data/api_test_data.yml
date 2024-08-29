@@ -34,3 +34,6 @@ test_delete_user:
   # username, except_result, except_code, except_msg
   - ["测试test", True, 0, "删除用户信息成功"]
   - ["wintest3", False, 3006, "该用户不允许删除"]
+
+
+
